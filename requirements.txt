@@ -1,2 +1,2 @@
 flask
-gunicon
+yt_dlp
