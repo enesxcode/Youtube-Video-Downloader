@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next YouTube Downloader</title>
+    <title>NexTube - Free YouTube Video Downloader - Fast and Easy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='app_icon.svg') }}" type="image/svg+xml">
     <script>
         tailwind.config = {
             theme: {
@@ -30,10 +30,10 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <i class="fas fa-play-circle text-3xl text-primary"></i>
-                    <h1 class="text-2xl font-bold">Next<span class="text-primary">Tube</span></h1>
+                    <h1 class="text-2xl font-bold">Nex<span class="text-primary">Tube</span></h1>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="#" class="hover:text-primary transition"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/enesxcode" target="_blank" class="hover:text-primary transition"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
