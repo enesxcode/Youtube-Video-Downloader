@@ -1,0 +1,101 @@
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    to { transform: rotate(-360deg); }
+}
+
+.animate-spin {
+    animation: spin 1.5s linear infinite;
+}
+
+.animate-spin-reverse {
+    animation: spin-reverse 1.5s linear infinite;
+}
+
+body {
+    background-color: #0f172a;
+}
+
+.bg-dark {
+    background-color: #1e293b;
+}
+
+.bg-darker {
+    background-color: #0f172a;
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.tab-btn {
+    position: relative;
+    color: #94a3b8;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: #e2e8f0;
+}
+
+.tab-btn.active {
+    color: #e2e8f0;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #6366f1;
+}
+
+.tab-content {
+    transition: opacity 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* Table styles */
+table {
+    min-width: 100%;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th {
+    background-color: #0f172a;
+}
+
+tr:nth-child(even) {
+    background-color: #1e293b80;
+}
+
+/* Smooth transitions */
+button, a, input {
+    transition: all 0.3s ease;
+}
